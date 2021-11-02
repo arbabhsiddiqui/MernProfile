@@ -51,7 +51,7 @@ const WorkListPage = ({ history, match }) => {
     dispatch({ type: WORK_CREATE_RESET });
 
     if (!userInfo || !userInfo.isAdmin) {
-      history.push("/login");
+      history.push("/babakha");
     }
     dispatch(listWorks("", pageNumber));
 

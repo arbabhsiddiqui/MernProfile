@@ -12,7 +12,7 @@ function App() {
       <Header />
       <main className="site-main">
         <Route path="/" component={HomePage} exact />
-        <Route path="/login" component={LoginPage} />
+        <Route path="/babaKha" component={LoginPage} />
         <Route path="/admin/work" exact component={WorkListPage} />
         <Route path="/admin/work/:id/edit" component={WorkEditPage} />
       </main>
