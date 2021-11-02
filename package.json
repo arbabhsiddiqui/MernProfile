@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arbabhsiddiqui/ArbabProfileMern.git"
+    "url": "git+https://github.com/arbabhsiddiqui/MernProfile.git"
   },
   "keywords": [
     "Mern",
@@ -44,7 +44,7 @@
     "nodemon": "^2.0.4"
   },
   "bugs": {
-    "url": "https://github.com/arbabhsiddiqui/ArbabProfileMern/issues"
+    "url": "https://github.com/arbabhsiddiqui/MernProfile/issues"
   },
-  "homepage": "https://github.com/arbabhsiddiqui/ArbabProfileMern#readme"
+  "homepage": "https://github.com/arbabhsiddiqui/MernProfile#readme"
 }
