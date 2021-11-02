@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+
+:root {
+  --primary-color: #27debf;
+  --primary-color2: #1da68f;
+  --title-color: #ffffff;
+  --text-color: #ffffff;
+  --border-color: #ffffff17;
+  --gradient-color: linear-gradient(90deg, #27debf 0%, #1da68f 100%);
+  --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+  /* font family variables. */
+  --roboto: "Montserrat", sans-serif;
+}
+
+/* Global Classes */
+
+.title-text {
+  font: normal 900 50px/ 72px var(--roboto);
+  color: var(--text-color);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button {
+  padding: 0.8rem 2.2rem;
+  font: normal 600 16px/20px var(--roboto);
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.button.primary-button {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: var(--gradient-color);
+  content: " ";
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  transition: background 0.6s ease;
+}
+
+.button.secondary-button:hover {
+  background: var(--gradient-color);
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+}
+
+p.para {
+  color: var(--text-color);
+  font: normal 500 16px/ 25px var(--roboto);
+}
+
+.font-roboto {
+  font-family: var(--roboto);
+}
+
+button:focus,
+button:active button:hover .btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.title-h1 {
+  font: normal bold 39px/ 40px var(--roboto);
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #090909;
+  box-shadow: var(--box-shadow);
+  z-index: 999;
+  transition: background 1s ease;
+}
+
+.text-green {
+  color: var(--primary-color);
+}
+
+/* start navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+  padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  font: normal 500 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* end navigation */
+
+/* Banner Area */
+/* ../img/banner/home-banner.png */
+.site-main .site-banner {
+  /* background: url(/img/banner/home-banner.png) no-repeat 0% 50%; */
+}
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+  content: " ";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 4rem;
+}
+
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.site-main .site-banner .banner-image > img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+
+.site-main .about-area {
+  padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+  display: block;
+  font: normal bold 49px/ 60px var(--roboto);
+  letter-spacing: 8px;
+}
+
+.site-main .about-area .about-title .paragraph > p {
+  padding: 0.4rem 0;
+}
+
+/* End About Area */
+
+/* Project Area */
+
+.site-main .project-area {
+  padding: 4rem 0;
+  /* background-color: #090909; */
+}
+
+.site-main .project-area .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px var(--roboto);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.site-main .project-area .button-group button:hover {
+  color: var(--primary-color);
+}
+
+.site-main .project-area .button-group button + button {
+  padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4 {
+  font: normal 700 25px/12px var(--roboto);
+  line-height: 35px;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img {
+  filter: brightness(0.9) drop-shadow(10px 10px 10px #178673);
+}
+
+/* End Project Area */
+
+/* Footer Area */
+/* ../img/footer-bg.png */
+footer.footer-area {
+  padding: 5rem 0;
+  background: url(/img/footer-bg.png) no-repeat;
+  background-size: cover;
+}
+
+footer.footer-area .social h5 {
+  font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--primary-color);
+}
+
+footer.footer-area .social a:hover > i {
+  color: #fff;
+}
+
+/* End Footer */
+
+/* if the viewport is equal to 340px or less than that */
+@media only screen and (max-width: 375px) {
+  .header_area .main-menu .navbar,
+  .header_area .main-menu .navbar .navbar-brand,
+  .site-main .subscribe-us-area .subscribe .subscribe-title,
+  .site-main .subscribe-us-area .subscribe .subscribe-title p,
+  h4,
+  .site-main .services-area,
+  .site-main .subscribe-us-area .subscribe {
+    padding: 2%;
+    margin: 0%;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #27debf;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+
+  .site-main .site-banner .site-title h1 {
+    font-size: 41px;
+  }
+
+  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+    width: 15rem !important;
+  }
+
+  .site-main > .services-area .services {
+    width: 13rem;
+  }
+}
+
+/* if the viewport is equal to 340px or less than that */
+@media only screen and (max-width: 792px) {
+  .site-main .about-area .about-title h2 > span {
+    font-size: 31px;
+    letter-spacing: 10px;
+  }
+
+  .site-main .brand-area .experience-area .years-area {
+    padding-left: 1%;
+    width: 49%;
+  }
+
+  .site-main .brand-area .experience-area .bg-panel {
+    margin-left: 30%;
+    width: 80%;
+  }
+
+  .site-main .brand-area .experience-area .call-area {
+    padding-left: 3%;
+  }
+
+  .site-main .project-area .button-group button {
+    font: normal 500 18px/40px var(--roboto);
+  }
+
+  .site-main .about-area .about-title p {
+    padding: 0%;
+  }
+
+  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+    width: 20rem;
+    margin: 5%;
+  }
+}
+
+/* if the viewport is equal to 1910px or less than that */
+@media only screen and (max-width: 1910px) {
+  .header_area .main-menu .navbar {
+    padding: 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .site-main .brand-area,
+  .site-main .services-area .services-title,
+  .site-main .about-area {
+    padding: 3% 4%;
+  }
+}
+
+.mt-100 {
+  margin-top: 200px;
+}
